@@ -1,0 +1,99 @@
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0 auto;
+  padding: 2rem;
+  line-height: 1.6;
+}
+
+/* Index page specific styles */
+body.index {
+  max-width: 800px;
+}
+
+/* Dinosaur page specific styles */
+body.dinosaur {
+  max-width: 600px;
+}
+
+h1 {
+  color: #2e8b57;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Dinosaur page h1 styling */
+.dinosaur h1 {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+p {
+  text-align: center;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.dinosaur-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 0.5rem;
+}
+
+.dinosaur-link {
+  display: block;
+  padding: 1rem;
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #2e8b57;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.dinosaur-link:hover {
+  background: #2e8b57;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Dinosaur page specific components */
+.info-card {
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 2rem 0;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.back-button {
+  display: inline-block;
+  background: #2e8b57;
+  color: white;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.back-button:hover {
+  background: #1e5f3f;
+}
+
+@media (max-width: 768px) {
+  .dinosaur-list {
+    grid-template-columns: 1fr;
+  }
+
+  .dinosaur h1 {
+    font-size: 2rem;
+  }
+
+  .info-card {
+    padding: 1.5rem;
+  }
+}
