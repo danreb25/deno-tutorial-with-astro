@@ -11,7 +11,7 @@ A simple dinosaur reference app built with Astro and running on Deno. This tutor
 
 ## Make It Your Own
 
-You can deploy your own version of this React app to Deno Deploy immediately. Just click the button to clone and deploy.
+You can deploy your own version of this Astro app to Deno Deploy immediately. Just click the button to clone and deploy.
 
 [![Deploy on Deno](https://deno.com/button)](https://app.deno.com/new?clone=https://github.com/denoland/tutorial-with-astro)
 
@@ -94,8 +94,7 @@ This project teaches you:
 
 ## 👀 Want to learn more?
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into
-our [Discord server](https://astro.build/chat).
+Check out [the Astro documentation](https://docs.astro.build) or the [Deno documentation](https://docs.deno.com).
 
 ---
 
