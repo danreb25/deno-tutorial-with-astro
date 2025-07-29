@@ -12,6 +12,10 @@ const dinosaursWithSlugs = DinosaurService.getDinosaursWithSlugs();
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Dinosaur Directory</title>
+		<link rel="preload" href="https://demo-styles.deno.deno.net/fonts/Moranga-Regular.woff2" as="font" type="font/woff2" crossorigin />
+		<link rel="preload" href="https://demo-styles.deno.deno.net/fonts/Moranga-Medium.woff2" as="font" type="font/woff2" crossorigin />
+		<link rel="preload" href="https://demo-styles.deno.deno.net/fonts/Recursive_Variable.woff2" as="font" type="font/woff2" crossorigin />
+		<link rel="stylesheet" href="https://demo-styles.deno.deno.net/styles.css">
 		<link rel="stylesheet" href="/src/styles/index.css" />
 	</head>
 	<body class="index">
@@ -20,7 +24,7 @@ const dinosaursWithSlugs = DinosaurService.getDinosaursWithSlugs();
 		
 		<div class="dinosaur-list">
 			{dinosaursWithSlugs.map((dinosaur) => (
-				<a href={`/dinosaur/${dinosaur.slug}`} class="dinosaur-link">
+				<a href={`/dinosaur/${dinosaur.slug}`} class="btn-primary">
 					{dinosaur.name}
 				</a>
 			))}

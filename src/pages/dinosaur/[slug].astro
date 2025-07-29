@@ -21,6 +21,10 @@ const { dinosaur } = Astro.props;
         <meta name="generator" content={Astro.generator} />
         <title>{dinosaur.name} - Dinosaur Directory</title>
         <meta name="description" content={dinosaur.description} />
+        		<link rel="preload" href="https://demo-styles.deno.deno.net/fonts/Moranga-Regular.woff2" as="font" type="font/woff2" crossorigin />
+		<link rel="preload" href="https://demo-styles.deno.deno.net/fonts/Moranga-Medium.woff2" as="font" type="font/woff2" crossorigin />
+		<link rel="preload" href="https://demo-styles.deno.deno.net/fonts/Recursive_Variable.woff2" as="font" type="font/woff2" crossorigin />
+		<link rel="stylesheet" href="https://demo-styles.deno.deno.net/styles.css">
         <link rel="stylesheet" href="/src/styles/index.css" />
     </head>
     <body class="dinosaur">
@@ -31,7 +35,7 @@ const { dinosaur } = Astro.props;
                 <p>{dinosaur.description}</p>
             </div>
             
-            <a href="/" class="back-button">← Back to Directory</a>
+            <a href="/" class="btn-secondary">Back to Directory</a>
         </main>
     </body>
 </html>
